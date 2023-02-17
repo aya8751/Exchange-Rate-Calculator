@@ -36,6 +36,7 @@ body{
 .description{
     color: var(--black-color);
     font-size: 1.6rem;
+    text-align: center;
 }
 .container{
     display: flex;
@@ -47,7 +48,8 @@ body{
 .currency{
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
+    background-color: #5fbaa7;
 }
 .currency-from,
 .currency-to{
@@ -110,5 +112,8 @@ select:focus{
 @media(max-width:46em){
     html{
         font-size: 50%;
+    }
+    .container{
+        width: 90%;
     }
 }
