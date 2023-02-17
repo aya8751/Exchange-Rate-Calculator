@@ -1,0 +1,109 @@
+:root {
+    --white-color: #fff;
+    --blackground-color:#f4f4f4;
+    --main-color: #5fbaa7; 
+    --maindark-color:#56a796;
+    --black-color: #000;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 63%;
+}
+body{
+    font-family: Arial, Helvetica,sans-serif;
+    font-weight: 400;
+    background-color: var(--blackground-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+    padding: 2rem;
+}
+.img{
+    width: 15rem;
+}
+.main-title{
+    margin: 3rem 0;
+    font-size: 3.2rem;
+}
+.description{
+    color: var(--black-color);
+    font-size: 1.6rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4rem;
+    padding: 4rem 0;
+}
+.currency-from,
+.currency-to{
+    font-size: 1.6rem;
+    padding: 1rem 3rem 1rem 1rem;
+    border: 1px solid #e6e5e5;
+    background: transparent;
+    appearance: none;
+}
+select:focus{
+    outline: none;
+}
+.select{
+    position: relative;
+    display: inline-block;
+}
+.select::before{
+    content: "\25bc";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    cursor: pointer;
+    color: var(--black-color);
+    transform: translateY(-50%);
+    padding: 0 1rem;
+    pointer-events: none;
+    transition: .25s all ease;
+}
+.select:hover::before{
+    color: #757575;
+}
+.currency input{
+    font-size: 3rem;
+    text-align: right;
+    border: 0;
+    background: transparent;
+    outline: none;
+}
+.swap-rate-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+.swap-btn{
+    background-color: var(--main-color);
+    cursor: pointer;
+    border-radius: 5px;
+    padding: .6rem 1.2rem;
+    border: 0;
+    color: var(--white-color);
+}
+.swap-btn:hover{
+    background-color: var(--maindark-color);
+}
+.rate{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+@media(max-width:46em){
+    html{
+        font-size: 50%;
+    }
+}
