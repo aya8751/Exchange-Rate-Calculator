@@ -48,8 +48,7 @@ body{
 .currency{
     display: flex;
     align-items: center;
-    /* justify-content: center; */
-    background-color: #5fbaa7;
+    justify-content: center;
 }
 .currency-from,
 .currency-to{
@@ -87,6 +86,7 @@ select:focus{
     border: 0;
     background: transparent;
     outline: none;
+    flex: 1;
 }
 .swap-rate-container{
     display: flex;
@@ -112,8 +112,5 @@ select:focus{
 @media(max-width:46em){
     html{
         font-size: 50%;
-    }
-    .container{
-        width: 90%;
     }
 }
