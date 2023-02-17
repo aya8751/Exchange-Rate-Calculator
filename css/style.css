@@ -44,6 +44,11 @@ body{
     gap: 4rem;
     padding: 4rem 0;
 }
+.currency{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .currency-from,
 .currency-to{
     font-size: 1.6rem;
